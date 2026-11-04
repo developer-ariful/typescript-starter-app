@@ -1,18 +1,10 @@
-import type { Product } from "./types/product.types.js";
-import { calculatePrice } from "./utils/calculate-price.js";
+import { validationProductName } from "./utils/validation-product.js";
 
 
-const product: Product = {
-  id: "1",
-  name: "Mechanical Keyboard",
-  price: 2500,
-  stock: 10,
+const productName = "Mechanical Keyboard";
+
+if(validationProductName(productName)) {
+  console.log(`Product name is valid`);
+}else{
+  console.log(`Product name must be at least 3 characters long`);
 }
-
-
-const finalPrice = calculatePrice(product.price, 10);;
-
-console.log("Product", product.name);
-console.log("Original Price:", product.price);
-console.log("Discounted 10%:");
-console.log("Final Price:", finalPrice);
