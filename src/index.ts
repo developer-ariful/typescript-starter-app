@@ -1,3 +1,4 @@
+import { calculatePrice } from "./utils/calculate-price.js";
 import { validationProductName } from "./utils/validation-product.js";
 
 
@@ -8,3 +9,5 @@ if(validationProductName(productName)) {
 }else{
   console.log(`Product name must be at least 3 characters long`);
 }
+
+console.log(calculatePrice(2500,10))
