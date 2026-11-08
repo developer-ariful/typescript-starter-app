@@ -10,6 +10,10 @@ describe("validationProductName", () => {
     expect(validationProductName("TV")).toBe(false);
   });
 
+  it("should reject a name shorter than 3 characters", ()=>{
+    expect(validationProductName("ABC")).toBe(true);
+  })
+
   it("should reject an empty name", () => {
     expect(validationProductName("")).toBe(false);
   });
