@@ -9,6 +9,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
+    "moduleResolution": "nodenext",
     // "types": [],
     // For nodejs:
     "lib": ["esnext"],
@@ -34,12 +35,15 @@
 
     // Recommended Options
     "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    "noEmitOnError": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
