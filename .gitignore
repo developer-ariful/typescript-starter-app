@@ -19,3 +19,6 @@ Thumbs.db
 
 # Editor Settings
 .vscode
+
+# Test coverage reports
+coverage/
